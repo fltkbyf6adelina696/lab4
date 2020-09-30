@@ -9,22 +9,22 @@ class Program
 {
 static void Main(string[] args)
 {
-Console.WriteLine("Введите n");
+Console.WriteLine("Р’РІРµРґРёС‚Рµ n");
 int n = int.Parse(Console.ReadLine());
 int[] a = new int[n];
 for(int i = 0;i<n;i++)
 {
-Console.WriteLine("Введите {0}-й элемент", i + 1);
+Console.WriteLine("Р’РІРµРґРёС‚Рµ {0}-Р№ СЌР»РµРјРµРЅС‚", i + 1);
 a[i] = int.Parse(Console.ReadLine());
 }
 
-Console.WriteLine("До сортировки: ");
+Console.WriteLine("Р”Рѕ СЃРѕСЂС‚РёСЂРѕРІРєРё: ");
 foreach (int i in a)
 Console.Write("\t{0}", i);
 
 Array.Sort(a);
 
-Console.WriteLine("\nПосле сортировки:");
+Console.WriteLine("\nРџРѕСЃР»Рµ СЃРѕСЂС‚РёСЂРѕРІРєРё:");
 foreach (int i in a)
 Console.Write("\t{0}", i);
 Console.ReadKey();
